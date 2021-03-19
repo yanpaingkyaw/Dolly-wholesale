@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolly Whole-slae</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/git/jquery-3.x-git.min.js"></script>
-    
     <script>    
         function PageInit() {
           var person = prompt("Please enter username:", "Harry Potter");
           if (person != null) {
             var pass = prompt("Please enter your passowrd:", "xxxx")
             if (person == "ypk" && pass == "123") {
-                //show content
-                $("#content").show();
+                //show container
+                $("#container").show();
                 document.getElementById("demo").innerHTML =
                 "Hello " + person + "! How are you today?";
             }
@@ -22,21 +22,51 @@
         }
     </script>
 </head>
-<body onload="PageInit()">
-    <div id="content" style="display:none;">
-        <h1>This is dolly wholesale page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam provident accusantium at, in sint tempora odit dignissimos quis eligendi omnis assumenda molestias repudiandae quae adipisci rerum fugit quisquam. Earum!
-        Quaerat molestiae, sed, tempore quidem voluptatibus iure iusto aut officiis asperiores sint dolorem deleniti. Iusto delectus harum, minus ipsum quaerat ratione deserunt recusandae reprehenderit vel incidunt perferendis veritatis nulla fugiat.
-        Consequuntur praesentium molestiae ea amet nesciunt cupiditate quae officiis libero unde. Soluta quisquam consectetur, fugit accusamus blanditiis nam itaque odio veritatis placeat fugiat doloremque labore eaque repudiandae, maxime voluptatibus! Eius.
-        Dolorem iusto exercitationem quos, dolorum ex animi praesentium facilis officia, pariatur quam ducimus non odit sed doloremque culpa enim architecto temporibus. Ut minima sed vitae, adipisci nostrum officia quas quos?
-        Aliquam a officia in molestias vero possimus repudiandae quis tempore unde quos iste magnam dolore veniam laudantium nam deleniti corporis modi corrupti aperiam id culpa illo, assumenda nulla beatae. Velit!
-        Consequuntur ex placeat vel cumque! Dignissimos enim doloribus dolore nostrum modi commodi sapiente harum! Vitae velit repellat, aliquid, rem incidunt ex praesentium dolore beatae harum cupiditate porro! Neque, ad. Placeat!
-        Ipsum repellendus voluptatem quis impedit obcaecati blanditiis dolore consectetur eligendi, iste dolorum, aliquid sunt sapiente dolorem corporis quaerat itaque id nam! Corrupti inventore debitis aliquam a rerum minus unde magnam.
-        Corporis dolores omnis expedita facilis ducimus aperiam ab laboriosam iste quae, nesciunt provident accusamus explicabo quas quo, non cum minus qui iure eaque? Mollitia repellendus veniam dolores dolore, dignissimos dicta?
-        Illum laboriosam quam mollitia rem! Sequi maiores quos vero ab qui, ipsa illum sunt, magnam nam minima ullam dicta hic eius, vel cumque. Incidunt quam tenetur soluta dolor. Sapiente, sunt?
-        Sed harum deserunt corrupti quis soluta vel autem, a unde omnis labore obcaecati. Eum sit cum maxime quos cumque ipsum voluptate obcaecati, esse rerum nobis hic molestias voluptatibus autem nulla!</p>
+<body onload="">
+    <!-- container -->
+    <div id="container">
+        <!-- header -->
+        <div id="header" class="bg-red-700 p-5 flex">
+            <img src="img/dolly-icon.png" alt="Dolly Craft Corner" width="80" class="rounded-full">
+            <h1 class="text-xl text-gray-200 font-extrabold pl-5 my-6 hover:text-gray-400">Dolly Craft Corner</h1> 
+        </div>
+        <!-- content -->
+        <div id="content" class="flex text-center bg-gray-200">
+            <div id="section1" class="p-5 w-1/2">
+                <!-- product -->
+                <div class="text-center">
+                    <img src="products/mould/mould-3.jpg" alt="" width="200" class="text-center text-center border-solid-2 border-red-700">
+                    <a href="#" class="inline-block bg-red-800 text-gray-200 p-3 text-align-left rounded">Price - 27000 MMK</a>
+                </div>
+                <div>
+                    <img src="products/mould/mould-4.jpg" alt="" width="200" class="p-3 rounded">
+                    <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+                </div>
+                
+            </div>
+            <div id="section2" class="p-5 w-1/2"> 
+                <img src="products/mould/mould-4.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+                <img src="products/mould/mould-3.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+            </div>
+            <div id="section3" class="p-5 w-1/2"> 
+                <img src="products/mould/mould-3.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+                <img src="products/mould/mould-4.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+            </div>
+            <div id="section4" class="p-5 w-1/2">
+                <img src="products/mould/mould-4.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+                <img src="products/mould/mould-3.jpg" alt="" width="200" class="p-3 rounded">
+                <span class="bg-red-800 text-gray-200  text-center rounded">Price - 27000 MMK</span>
+            </div>
+        
+        </div>
+        <!-- footer -->
+        <div id="footer"></div>
     </div>
-   
     <div id="demo"></div>
 </body>
 </html>
