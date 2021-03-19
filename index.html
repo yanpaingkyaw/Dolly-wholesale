@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolly Whole-slae</title>
+    <script src="https://code.jquery.com/git/jquery-3.x-git.min.js"></script>
+    
+    <script>    
+        function PageInit() {
+          var person = prompt("Please enter username:", "Harry Potter");
+          if (person != null) {
+            var pass = prompt("Please enter your passowrd:", "xxxx")
+            if (person == "ypk" && pass == "123") {
+                //show content
+                $("#content").show();
+                document.getElementById("demo").innerHTML =
+                "Hello " + person + "! How are you today?";
+            }
+          }
+        }
+    </script>
+</head>
+<body onload="PageInit()">
+    <div id="content" style="display:none;">
+        <h1>This is dolly wholesale page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam provident accusantium at, in sint tempora odit dignissimos quis eligendi omnis assumenda molestias repudiandae quae adipisci rerum fugit quisquam. Earum!
+        Quaerat molestiae, sed, tempore quidem voluptatibus iure iusto aut officiis asperiores sint dolorem deleniti. Iusto delectus harum, minus ipsum quaerat ratione deserunt recusandae reprehenderit vel incidunt perferendis veritatis nulla fugiat.
+        Consequuntur praesentium molestiae ea amet nesciunt cupiditate quae officiis libero unde. Soluta quisquam consectetur, fugit accusamus blanditiis nam itaque odio veritatis placeat fugiat doloremque labore eaque repudiandae, maxime voluptatibus! Eius.
+        Dolorem iusto exercitationem quos, dolorum ex animi praesentium facilis officia, pariatur quam ducimus non odit sed doloremque culpa enim architecto temporibus. Ut minima sed vitae, adipisci nostrum officia quas quos?
+        Aliquam a officia in molestias vero possimus repudiandae quis tempore unde quos iste magnam dolore veniam laudantium nam deleniti corporis modi corrupti aperiam id culpa illo, assumenda nulla beatae. Velit!
+        Consequuntur ex placeat vel cumque! Dignissimos enim doloribus dolore nostrum modi commodi sapiente harum! Vitae velit repellat, aliquid, rem incidunt ex praesentium dolore beatae harum cupiditate porro! Neque, ad. Placeat!
+        Ipsum repellendus voluptatem quis impedit obcaecati blanditiis dolore consectetur eligendi, iste dolorum, aliquid sunt sapiente dolorem corporis quaerat itaque id nam! Corrupti inventore debitis aliquam a rerum minus unde magnam.
+        Corporis dolores omnis expedita facilis ducimus aperiam ab laboriosam iste quae, nesciunt provident accusamus explicabo quas quo, non cum minus qui iure eaque? Mollitia repellendus veniam dolores dolore, dignissimos dicta?
+        Illum laboriosam quam mollitia rem! Sequi maiores quos vero ab qui, ipsa illum sunt, magnam nam minima ullam dicta hic eius, vel cumque. Incidunt quam tenetur soluta dolor. Sapiente, sunt?
+        Sed harum deserunt corrupti quis soluta vel autem, a unde omnis labore obcaecati. Eum sit cum maxime quos cumque ipsum voluptate obcaecati, esse rerum nobis hic molestias voluptatibus autem nulla!</p>
+    </div>
+   
+    <div id="demo"></div>
+</body>
+</html>
